@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#ffffff"/>
+  <text x="20" y="40" font-family="Arial" font-size="24" font-weight="bold">Styles Panel</text>
+  <text x="20" y="80" font-family="Arial" font-size="16">• View applied styles</text>
+  <text x="20" y="110" font-family="Arial" font-size="16">• See inherited properties</text>
+  <text x="20" y="140" font-family="Arial" font-size="16">• Check overridden styles</text>
+</svg> 

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff"/>
+  
+  <!-- Margin -->
+  <rect x="100" y="100" width="600" height="400" fill="#FFE6CC" stroke="#F29339" stroke-width="2"/>
+  
+  <!-- Border -->
+  <rect x="150" y="150" width="500" height="300" fill="#DAE8FC" stroke="#3371D6" stroke-width="3"/>
+  
+  <!-- Padding -->
+  <rect x="180" y="180" width="440" height="240" fill="#D5E8D4" stroke="#82B366" stroke-width="2"/>
+  
+  <!-- Content -->
+  <rect x="240" y="240" width="320" height="120" fill="#F8CECC" stroke="#B85450" stroke-width="2"/>
+  <text x="400" y="300" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#B85450" font-weight="bold">Content</text>
+  <text x="400" y="330" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#B85450">width × height</text>
+  
+  <!-- Main Labels - Simplified -->
+  <text x="400" y="220" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#82B366" font-weight="bold">Padding</text>
+  <text x="400" y="170" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#3371D6" font-weight="bold">Border</text>
+  <text x="400" y="120" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#F29339" font-weight="bold">Margin</text>
+  
+  <!-- Total Width Indicator -->
+  <line x1="60" y1="550" x2="740" y2="550" stroke="#333333" stroke-width="2"/>
+  <line x1="60" y1="545" x2="60" y2="555" stroke="#333333" stroke-width="2"/>
+  <line x1="740" y1="545" x2="740" y2="555" stroke="#333333" stroke-width="2"/>
+  <text x="400" y="580" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold">Total Width = content width + padding + border + margin</text>
+  
+  <!-- Box-sizing Callout -->
+  <rect x="500" y="30" width="280" height="50" rx="10" ry="10" fill="#f0f0f0" stroke="#666666" stroke-width="1"/>
+  <text x="640" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">box-sizing:</text>
+  <text x="640" y="75" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">content-box | border-box</text>
+  <line x1="500" y1="55" x2="460" y2="100" stroke="#666666" stroke-width="1" stroke-dasharray="5,3"/>
+</svg>

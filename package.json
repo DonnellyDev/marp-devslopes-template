@@ -1,0 +1,26 @@
+{
+  "name": "marp-presentations-template",
+  "version": "1.0.0",
+  "description": "Template for creating professional presentations with Marp",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "./scripts/build.sh",
+    "watch": "./scripts/watch.sh",
+    "create": "node ./scripts/create-presentation.js"
+  },
+  "keywords": [
+    "marp",
+    "presentation",
+    "slides",
+    "template"
+  ],
+  "author": "Eric Donnelly",
+  "license": "ISC",
+  "dependencies": {
+    "@marp-team/marp-cli": "^2.5.0"
+  },
+  "devDependencies": {
+    "fs-extra": "^11.1.1"
+  }
+}

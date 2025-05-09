@@ -1,0 +1,154 @@
+/* @theme devslopes */
+
+@import "default";
+
+/* Variables for customization */
+:root {
+  --primary-color: #ed1c40; /* Devslopes red */
+  --secondary-color: #dddddd; /* Dark gray */
+  --background-color: #343434; /* Main slide background */
+  --text-color: #f8f8f8; /* Main text color */
+  --code-background: #b0b0b0; /* Code block background */
+}
+
+/* Base section styles */
+section {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+
+  /* This adds your company logo to all slides */
+  background-image: url("./assets/logos/devslopes-logo.jpg"); /* Updated path */
+  background-position: bottom 10px right 10px;
+  background-repeat: no-repeat;
+  background-size: 80px; /* Adjust size as needed */
+}
+
+/* Table styles */
+table {
+  border-collapse: collapse;
+  background-color: var(--background-color);
+}
+
+table td,
+table th {
+  border: none;
+  padding: 8px;
+  background-color: var(--background-color);
+}
+
+/* Typography */
+h1 {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+h2,
+th {
+  color: var(--secondary-color);
+}
+
+h3 {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* Lists */
+ul li,
+ol li {
+  margin-bottom: 0.5em;
+}
+
+/* Code blocks */
+code {
+  background-color: var(--code-background);
+  border-radius: 4px;
+  padding: 0.2em 0.4em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+pre {
+  background-color: var(--code-background);
+  border-radius: 6px;
+  padding: 16px;
+  border-left: 4px solid var(--primary-color);
+  margin: 1em 0;
+}
+
+/* Title slide */
+section.title {
+  background-image: linear-gradient(
+      135deg,
+      rgba(237, 28, 64, 0.1),
+      rgba(46, 46, 46, 0.1)
+    ),
+    url("./assets/logos/devslopes-logo.png"); /* Updated path */
+  background-position: center, bottom 10px right 10px;
+  background-repeat: no-repeat;
+  background-size: cover, 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+section.title h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+section.title h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+  opacity: 0.8;
+}
+/* Footer with logo */
+section::after {
+  content: attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);
+  font-size: 0.6em;
+  text-align: right;
+  right: 30px;
+  bottom: 20px;
+
+  /* Add the logo to the left side of the footer */
+  padding-left: 30px;
+  background-image: url("../../assets/logos/devslopes-logo-small.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 24px;
+}
+
+/* Highlight section */
+section.highlight {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+section.highlight h1,
+section.highlight h2,
+section.highlight h3 {
+  color: white;
+}
+
+section.highlight a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Two-column layout */
+.columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  gap: 1rem;
+}
+
+.columns > div {
+  flex: 1;
+}
