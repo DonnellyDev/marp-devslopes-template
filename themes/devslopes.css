@@ -107,6 +107,7 @@ section.title h2 {
   margin-top: 0;
   opacity: 0.8;
 }
+b
 /* Footer with logo */
 section::after {
   content: attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);
@@ -121,6 +122,10 @@ section::after {
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 24px;
+}
+footer {
+  margin-top: 2rem;
+  opacity: 50%;
 }
 
 /* Highlight section */
