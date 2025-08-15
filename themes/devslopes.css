@@ -18,10 +18,10 @@ section {
   color: var(--text-color);
 
   /* This adds your company logo to all slides */
-  background-image: url("./assets/logos/devslopes-logo.jpg"); /* Updated path */
-  background-position: bottom 10px right 10px;
+  background-image: url("../assets/logos/devslopes-logo-small.jpg");
+  background-position: bottom 20px right 60px;
   background-repeat: no-repeat;
-  background-size: 80px; /* Adjust size as needed */
+  background-size: 40px; /* Adjust size as needed */
 }
 
 /* Table styles */
@@ -82,14 +82,13 @@ pre {
 /* Title slide */
 section.title {
   background-image: linear-gradient(
-      135deg,
-      rgba(237, 28, 64, 0.1),
-      rgba(46, 46, 46, 0.1)
-    ),
-    url("./assets/logos/devslopes-logo.png"); /* Updated path */
-  background-position: center, bottom 10px right 10px;
+    135deg,
+    rgba(237, 28, 64, 0.1),
+    rgba(46, 46, 46, 0.1)
+  );
+  background-position: bottom 10px right 10px;
   background-repeat: no-repeat;
-  background-size: cover, 120px;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,9 +117,6 @@ section::after {
 
   /* Add the logo to the left side of the footer */
   padding-left: 30px;
-  background-image: url("../../assets/logos/devslopes-logo-small.jpg");
-  background-repeat: no-repeat;
-  background-position: left center;
   background-size: 24px;
 }
 footer {
@@ -150,7 +146,6 @@ section.highlight a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   gap: 1rem;
 }
 
